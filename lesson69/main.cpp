@@ -15,7 +15,7 @@ int main() {
 	Bus buses[1] = { bus };
 	Truck trucks[2] = { truck1, truck2 };
 
-	int total = calculateTotalGas(trucks, 2, buses, 1, cars, 3);
+	int total = GasStation::calculateTotalGas(trucks, 2, buses, 1, cars, 3);
 
 	cout << total << endl;
 	return 0;
