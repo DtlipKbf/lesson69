@@ -1,6 +1,6 @@
 #pragma once
 
-class Truck{
+class Truck {
 private:
 	int weight;
 	int tank;

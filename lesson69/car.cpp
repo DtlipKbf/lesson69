@@ -1,4 +1,5 @@
 #include "car.h"
+
 int Car::getSpeed() {
 	return speed;
 };
@@ -13,13 +14,5 @@ int Car::getPower() {
 void Car::setPower(int pover) {
 	if (power > 0) {
 		this->power = power;
-	}
-};
-int Car::getTank() {
-	return tank;
-};
-void Car::setTank(int tank) {
-	if (tank > 0) {
-		this->tank = tank;
 	}
 };
