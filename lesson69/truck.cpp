@@ -1,5 +1,12 @@
 #include "truck.h"
 
+Truck::Truck() : Transport() {
+	weight = 0;
+}
+Truck::Truck(int tank, int weight) : Transport(tank) {
+	this->weight = weight;
+}
+Truck::~Truck(){}
 int Truck::getTank() {
 	return tank;
 }
