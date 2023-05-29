@@ -1,5 +1,14 @@
 #include "car.h"
 
+Car::Car() : Transport() {
+	speed = 0;
+	power = 0;
+}
+Car::Car(int tank, int power, int speed) : Transport(tank) {
+	this->speed = speed;
+	this->power = power;
+}
+Car::~Car(){}
 int Car::getSpeed() {
 	return speed;
 };
