@@ -15,4 +15,3 @@ public:
 	int getTank();
 	void setTank(int weight);
 };
-

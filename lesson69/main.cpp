@@ -11,11 +11,10 @@ int main() {
 	Truck truck1(300, 20000);
 	Truck truck2(350, 25000);
 
-	Car cars[3] = { car1, car2, car3 };
-	Bus buses[1] = { bus };
-	Truck trucks[2] = { truck1, truck2 };
+	Transport transport[15] = {car1,car2,car3, bus, truck1, truck2};
+	int size = Transport::getCount();
 
-	int total = GasStation::calculateTotalGas(trucks, 2, buses, 1, cars, 3);
+	int total = GasStation::calculateTotalGas(transport, size);
 
 	cout << total << endl;
 	return 0;
